@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-us" class="no-js">
+
+	<head>
+		<meta charset="utf-8">
+        <title>Birthday Invite</title>
+        <meta name="description" content="The description should optimally be between 150-160 characters.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Madeon08">
+
+        <!-- ================= Favicon ================== -->
+        <!-- Standard -->
+        <link rel="shortcut icon" href="img/favicon.png">
+        <!-- Retina iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicon-retina-ipad.png">
+        <!-- Retina iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon-retina-iphone.png">
+        <!-- Standard iPad Touch Icon--> 
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon-standard-ipad.png">
+        <!-- Standard iPhone Touch Icon--> 
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicon-standard-iphone.png">
+
+        <!-- ============== Resources style ============== -->
+        <link rel="stylesheet" href="css/style-map-variant.css" />
+
+		<!-- Modernizr runs quickly on page load to detect features -->
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	
+	<body>
+
+		<!-- Page preloader -->
+	<!-- 	<div id="loading">
+			<div id="preloader">
+				<span></span>
+				<span></span>
+			</div>
+		</div> -->
+
+		<!-- Overlay and Star effect -->
+		<div class="global-overlay">
+			<div class="overlay skew-part">
+
+				<div id='stars'></div>
+				<div id='stars2'></div>
+				<div id='stars3'></div>
+
+			</div>
+		</div>
+
+		<!-- START - Home/Left Part -->
+		<section id="left-side">
+
+			<!-- Your logo -->
+			<img src="img/my_pic.jpeg" alt="" width="193" height="235" class="brand-logo" />
+
+			<div class="content">
+				<br><br><br><br><br><br><br><br><br>
+				<h2 class="text-intro opacity-0">Come Join Bobbierre In Celebrating Her 24th Birthday:
+				</h2>
+				<h3 class="text-intro opacity-0">Birthday In:
+					<div id="getting-started"></div>
+				</h3>
+				<h5 class="text-intro opacity-0"><br>
+					Dec 9th 2021<br>Apex Entertainment Center<br><br>9583 Destiny Dr<br>Syracuse, N Y13204.<br>United States<br>RSVP by 12/7/21
+					</h5>
+
+			</div>
+
+			<!-- Social icons -->
+			<div class="social-icons">
+
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-google-plus"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+
+			</div>
+
+		</section>
+		<!-- END - Home/Left Part -->
+
+		<!-- MAP -->
+		<div class="map-container opacity-0 animated-middle">
+			<div id="map"></div>
+		</div>
+
+	<!-- ///////////////////\\\\\\\\\\\\\\\\\\\ -->
+    <!-- ********** Resources jQuery ********** -->
+    <!-- \\\\\\\\\\\\\\\\\\\/////////////////// -->
+	
+	<!-- * Libraries jQuery, Easing and Bootstrap - Be careful to not remove them * -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easings.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- PhotoSwipe Core JS file -->
+	<script src="js/velocity.min.js"></script> 
+
+	<!-- PhotoSwipe UI JS file -->
+	<script src="js/velocity.ui.min.js"></script> 
+
+	<!-- Newsletter plugin -->
+	<script src="js/notifyMe.js"></script>
+
+	<!-- Contact form plugin -->
+	<script src="js/contact-me.js"></script>
+
+	<!-- *** Google Maps API *** -->
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyDxaM03YZzyzD9W6A_UlA06XViDt1VxuDs"></script>
+	<script src="js/map.js"></script>
+
+	<!-- Scroll plugin -->
+	<script src="js/jquery.mousewheel.js"></script>
+
+	<!-- Custom Scrollbar plugin -->
+	<script src="js/jquery.mCustomScrollbar.js"></script>
+
+	<!-- Popup Newsletter Form -->
+	<script src="js/classie.js"></script>
+	<script src="js/dialogFx.js"></script>
+
+	<!-- PhotoSwipe Core JS file -->
+	<script src="js/photoswipe.js"></script> 
+
+	<!-- PhotoSwipe UI JS file -->
+	<script src="js/photoswipe-ui-default.js"></script>
+
+	<!-- Countdown plugin -->
+	<script src="js/jquery.countdown.js"></script>
+
+	<script>
+	$("#getting-started")
+		// Year/Month/Day Hour:Minute:Second
+		.countdown("2021/12/10 10:30:30", function(event) {
+			$(this).text(
+				event.strftime('%D Day %Hh %Mm %Ss')
+			);
+	});
+	</script>
+
+	<!-- Main JS File -->
+	<script src="js/main.js"></script>
+	
+	<!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
+
+	</body>
+
+</html>
